@@ -1,5 +1,14 @@
-html, body {
-  color: #052036;
+/* http://paletton.com/#uid=13J0u0k4R8i48lv4BfmaX57ia5f */
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: #26282C;
+  color: #FFFFFF;
+  font-family: 'Oswald', sans-serif;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -13,8 +22,20 @@ div#main {
   justify-content: space-between;
 }
 
+div#main div#content {
+  background-color: #333B47;
+  font-size: 10rem;
+  padding: 0.8em;
+}
+
 div#main div#footer {
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.5em;
+  font-size: 3rem;
   font-weight: 300;
+  padding: 0.8em;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
