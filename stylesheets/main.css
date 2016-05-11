@@ -7,6 +7,7 @@ body {
   background-color: #18191B;
   color: #FFFFFF;
   font-family: 'Oswald', sans-serif;
+  font-weight: 300;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -21,15 +22,22 @@ div#main {
 }
 
 div#main div#content {
-  background-color: #333B47;
+  background-color: #22272B;
+}
+
+div#main div#content span.title {
+  font-family: 'Open Sans', sans-serif;
   font-size: 10rem;
-  padding: 0.8em;
+  letter-spacing: 0.15em;
+  padding: 0.5em;
+  text-transform: uppercase;
 }
 
 div#main div#footer {
-  font-size: 3rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
   font-weight: 300;
-  padding: 0.8em;
+  padding: 0.5em 1em;
 }
 
 .unselectable {
