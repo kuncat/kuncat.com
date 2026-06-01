@@ -29,8 +29,9 @@ function tailwindcssSkipSvelte() {
 
 // https://astro.build/config
 export default defineConfig({
+  base: "/kuncat.com",
   integrations: [svelte()],
-
+  site: "https://kuncat.github.io",
   vite: {
     plugins: [tailwindcssSkipSvelte()],
     server: {
