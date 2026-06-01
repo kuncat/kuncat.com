@@ -6,6 +6,8 @@ import svelte from "@astrojs/svelte";
 
 import tailwindcss from "@tailwindcss/vite";
 
+import cloudflare from "@astrojs/cloudflare";
+
 /**
  * Wraps `@tailwindcss/vite` so its `generate` transforms skip Svelte's virtual style modules (`x.svelte?svelte&type=style&lang.css`).
  *
@@ -31,6 +33,7 @@ function tailwindcssSkipSvelte() {
 export default defineConfig({
   integrations: [svelte()],
   site: "https://games.kuncat.com",
+
   vite: {
     plugins: [tailwindcssSkipSvelte()],
     server: {
@@ -49,4 +52,6 @@ export default defineConfig({
       },
     },
   },
+
+  adapter: cloudflare()
 });
