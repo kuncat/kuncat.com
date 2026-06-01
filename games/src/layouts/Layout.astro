@@ -1,5 +1,10 @@
 ---
 import "../styles/global.css";
+
+type FaviconInput = string | { src?: string } | null | undefined;
+
+const { favicon, title }: { favicon?: FaviconInput; title?: string } = Astro.props;
+const faviconHref = typeof favicon === "string" ? favicon : (favicon?.src ?? "/favicon.svg");
 ---
 
 <!doctype html>
@@ -7,10 +12,9 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href={faviconHref} />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <title>{title ?? "Kuncat"}</title>
   </head>
   <body>
     <slot />
