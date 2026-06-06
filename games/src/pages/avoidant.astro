@@ -1,9 +1,10 @@
 ---
+import { IROH_RELAY_SERVERS } from "../constants";
 import Layout from "../layouts/Layout.astro";
 import { AvoidantGame, favicon } from "@kuncat/avoidant";
 import "@kuncat/avoidant/styles.css";
 ---
 
 <Layout favicon={favicon} title="Avoidant">
-  <AvoidantGame client:only="svelte" />
+  <AvoidantGame client:only="svelte" relayServers={IROH_RELAY_SERVERS} />
 </Layout>
