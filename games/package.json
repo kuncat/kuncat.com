@@ -14,11 +14,11 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.9",
-    "@astrojs/svelte": "^8.1.2",
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/svelte": "^9.0.1",
     "@kuncat/avoidant": "^0.1.4",
     "@tailwindcss/vite": "^4.3.0",
-    "astro": "^6.4.2",
+    "astro": "^7.1.6",
     "svelte": "^5.56.0",
     "tailwindcss": "^4.3.0",
     "typescript": "^6.0.3"
