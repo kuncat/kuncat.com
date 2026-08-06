@@ -16,7 +16,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.10",
     "@astrojs/svelte": "^9.0.1",
-    "@kuncat/avoidant": "^0.1.4",
+    "@kuncat/avoidant": "^0.1.5",
     "@tailwindcss/vite": "^4.3.0",
     "astro": "^7.1.6",
     "svelte": "^5.56.0",
